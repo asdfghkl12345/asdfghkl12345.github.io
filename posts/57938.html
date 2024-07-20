@@ -49,7 +49,20 @@
 
 
 
-
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.css"><style>
+#needsharebutton-postbottom {
+  cursor: pointer;
+  height: 26px;
+  margin-top: 10px;
+  position: relative;
+}
+#needsharebutton-postbottom .btn {
+  border: 1px solid $btn-default-border-color;
+  border-radius: 3px;
+  display: initial;
+  padding: 1px 4px;
+}
+</style>
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -265,7 +278,7 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python main.py</span><br></pre></td></tr></table></figure>
 <p>静等一会儿后，他会在download目录下生成8部电影。</p>
 <h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><p>1.本程序仅作学习使用，请勿用于商业用途。</p>
-<p>2.本程序下载的文件来源于LIBVIO，如有侵权问题，请联系我删除，联系方式:<a href="mailto:&#119;&#x61;&#x6e;&#103;&#x73;&#x69;&#x73;&#x68;&#x75;&#110;&#50;&#48;&#x31;&#x32;&#x31;&#50;&#64;&#111;&#x75;&#x74;&#108;&#x6f;&#111;&#x6b;&#x2e;&#x63;&#x6f;&#x6d;">&#119;&#x61;&#x6e;&#103;&#x73;&#x69;&#x73;&#x68;&#x75;&#110;&#50;&#48;&#x31;&#x32;&#x31;&#50;&#64;&#111;&#x75;&#x74;&#108;&#x6f;&#111;&#x6b;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
+<p>2.本程序下载的文件来源于LIBVIO，如有侵权问题，请联系我删除，联系方式:<a href="mailto:&#119;&#97;&#110;&#x67;&#x73;&#105;&#x73;&#104;&#117;&#110;&#50;&#x30;&#x31;&#50;&#x31;&#50;&#x40;&#x6f;&#x75;&#x74;&#108;&#111;&#111;&#x6b;&#x2e;&#99;&#111;&#x6d;">&#119;&#97;&#110;&#x67;&#x73;&#105;&#x73;&#104;&#117;&#110;&#50;&#x30;&#x31;&#50;&#x31;&#50;&#x40;&#x6f;&#x75;&#x74;&#108;&#111;&#111;&#x6b;&#x2e;&#99;&#111;&#x6d;</a></p>
 <p>3.本程序下载速度取决于你的网络速度，请耐心等待。</p>
 <h1 id="鸣谢名单："><a href="#鸣谢名单：" class="headerlink" title="鸣谢名单："></a>鸣谢名单：</h1><p>1.CSDN博主:<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_29349715">梦醒人醉</a>,使用代码:<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_29349715/article/details/120743829">代码</a></p>
 <p>2.<a target="_blank" rel="noopener" href="https://www.libvio.fun/">LIBIO网站</a></p>
@@ -276,7 +289,13 @@
     
     
 
-    <footer class="post-footer">
+    <footer class="post-footer"><div class="post-widgets">
+      <div id="needsharebutton-postbottom">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    </div>
           <div class="post-tags">
               <a href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag"><i class="fa fa-tag"></i> 编程</a>
           </div>
@@ -446,5 +465,14 @@
   </script>
 
 
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
+  <script>
+      pbOptions = {};
+        pbOptions.iconStyle = "box";
+        pbOptions.boxForm = "horizontal";
+        pbOptions.position = "bottomCenter";
+        pbOptions.networks = "Wechat,QQZone,Weibo,Douban,Twitter,Facebook";
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+  </script>
 </body>
 </html>

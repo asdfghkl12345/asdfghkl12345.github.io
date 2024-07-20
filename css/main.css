@@ -1292,7 +1292,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #30dfbe;
+    background: #a2ffe8;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1709,6 +1709,48 @@ pre code {
   50%, 70% {
     transform: scale(1.1);
   }
+}
+.rtl.post-body p,
+.rtl.post-body a,
+.rtl.post-body h1,
+.rtl.post-body h2,
+.rtl.post-body h3,
+.rtl.post-body h4,
+.rtl.post-body h5,
+.rtl.post-body h6,
+.rtl.post-body li,
+.rtl.post-body ul,
+.rtl.post-body ol {
+  direction: rtl;
+  font-family: UKIJ Ekran;
+}
+.rtl.post-title {
+  font-family: UKIJ Ekran;
+}
+.post-button {
+  margin-top: 40px;
+  text-align: center;
+}
+.use-motion .post-block {
+  visibility: hidden;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px #cacbcb;
+  -moz-box-shadow: 0 0 5px #cacbcc;
+}
+.use-motion .pagination,
+.use-motion .comments {
+  visibility: hidden;
+}
+.use-motion .post-header {
+  visibility: hidden;
+}
+.use-motion .post-body {
+  visibility: hidden;
+}
+.use-motion .collection-header {
+  visibility: hidden;
 }
 .back-to-top {
   font-size: 12px;
