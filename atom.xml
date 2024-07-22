@@ -6,7 +6,7 @@
   <link href="https://example.com/atom.xml" rel="self"/>
   
   <link href="https://example.com/"/>
-  <updated>2024-07-19T12:37:57.326Z</updated>
+  <updated>2024-07-22T04:07:22.624Z</updated>
   <id>https://example.com/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决hexo-asset-image不显示图片和跟hexo-abbrlink适配的问题</title>
+    <link href="https://example.com/posts/1ec292e6.html"/>
+    <id>https://example.com/posts/1ec292e6.html</id>
+    <published>2024-07-22T03:53:36.000Z</published>
+    <updated>2024-07-22T04:07:22.624Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;搞了半天，可算搞定了。就是这个hexo-asset-image插件，一直显示不出来图片，上网查了半天才解决完。&lt;/p&gt;
+&lt;h3 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题:&quot;&gt;&lt;/a&gt;问题:&lt;/h3&gt;&lt;p&gt;我不想使用原版的代码，太老套啰嗦了，于是就看到了这个hexo-asset-image插件，说是安完之后可以用markdown语法来显示图片。&lt;br&gt;但是，就出现了以下问题：&lt;br&gt;&lt;img src=&quot;/posts/1ec292e6/%E5%B1%95%E7%A4%BA.png&quot;&gt;&lt;br&gt;啊？什么情况？？？？？为什么显示不出来？&lt;/p&gt;
+&lt;h3 id=&quot;解决：&quot;&gt;&lt;a href=&quot;#解决：&quot; class=&quot;headerlink&quot; title=&quot;解决：&quot;&gt;&lt;/a&gt;解决：&lt;/h3&gt;&lt;p&gt;经过一番摸索，我终于摸索出了原因：&lt;br&gt;1.那个hexo-asset-image插件已经不更新了，所以本来就有问题。&lt;br&gt;2.插件跟hexo-abbrlink插件不兼容，要改。&lt;/p&gt;
+&lt;p&gt;好好好，给我玩叠甲是吧！TNND,我偏要搞定。&lt;/p&gt;
+&lt;p&gt;首先你得先把hexo-asset-image插件安装好,&lt;br&gt;然后找到node_modules&#92;hexo-asset-image目录，把index.js文件里的代码改成以下内容：&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>github pages绑定自定义域名的教训</title>
+    <link href="https://example.com/posts/1a06e7b.html"/>
+    <id>https://example.com/posts/1a06e7b.html</id>
+    <published>2024-07-21T10:12:57.000Z</published>
+    <updated>2024-07-22T03:47:06.981Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    
+    <category term="编程" scheme="https://example.com/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>download_harrypotter_master介绍</title>
