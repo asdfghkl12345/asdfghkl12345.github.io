@@ -26,9 +26,7 @@
     
     <summary type="html">&lt;p&gt;搞了半天，可算搞定了。就是这个hexo-asset-image插件，一直显示不出来图片，上网查了半天才解决完。&lt;/p&gt;
 &lt;h3 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题:&quot;&gt;&lt;/a&gt;问题:&lt;/h3&gt;&lt;p&gt;我不想使用原版的代码，太老套啰嗦了，于是就看到了这个hexo-asset-image插件，说是安完之后可以用markdown语法来显示图片。&lt;br&gt;但是，就出现了以下问题：&lt;br&gt;&lt;img src=&quot;/posts/1ec292e6/%E5%B1%95%E7%A4%BA.png&quot;&gt;&lt;br&gt;啊？什么情况？？？？？为什么显示不出来？&lt;/p&gt;
-&lt;h3 id=&quot;解决：&quot;&gt;&lt;a href=&quot;#解决：&quot; class=&quot;headerlink&quot; title=&quot;解决：&quot;&gt;&lt;/a&gt;解决：&lt;/h3&gt;&lt;p&gt;经过一番摸索，我终于摸索出了原因：&lt;br&gt;1.那个hexo-asset-image插件已经不更新了，所以本来就有问题。&lt;br&gt;2.插件跟hexo-abbrlink插件不兼容，要改。&lt;/p&gt;
-&lt;p&gt;好好好，给我玩叠甲是吧！TNND,我偏要搞定。&lt;/p&gt;
-&lt;p&gt;首先你得先把hexo-asset-image插件安装好,&lt;br&gt;然后找到node_modules&#92;hexo-asset-image目录，把index.js文件里的代码改成以下内容：&lt;/p&gt;</summary>
+&lt;h3 id=&quot;解决：&quot;&gt;&lt;a href=&quot;#解决：&quot; class=&quot;headerlink&quot; title=&quot;解决：&quot;&gt;&lt;/a&gt;解决：&lt;/h3&gt;&lt;p&gt;经过一番摸索，我终于摸索出了原因：&lt;br&gt;1.那个hexo-asset-image插件已经不更新了，所以本来就有问题。&lt;br&gt;2.插件跟hexo-abbrlink插件不兼容，要改。&lt;/p&gt;</summary>
     
     
     
@@ -43,13 +41,8 @@
     <updated>2024-07-22T03:47:06.981Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html"></summary>
-        
-      
+    <summary type="html">&lt;h1 id=&quot;github-pages绑定自定义域名的教训&quot;&gt;&lt;a href=&quot;#github-pages绑定自定义域名的教训&quot; class=&quot;headerlink&quot; title=&quot;github pages绑定自定义域名的教训&quot;&gt;&lt;/a&gt;github pages绑定自定义域名的教训&lt;/h1&gt;&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;最近在搭建个人博客的时候，遇到了一些问题，记录一下。&lt;/p&gt;
+&lt;h2 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h2&gt;&lt;p&gt;1.cloudflare的DNS解析没有生效&lt;br&gt;2.强制使用https访问按钮变灰&lt;br&gt;&lt;img src=&quot;/posts/1a06e7b/test.png&quot; alt=&quot;使用https访问&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -71,10 +64,7 @@
 &lt;li&gt;看到别人看《哈利波特》书，我就想着去看电影，所以此程序是用于下载电影的。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&quot;使用方法&quot;&gt;&lt;a href=&quot;#使用方法&quot; class=&quot;headerlink&quot; title=&quot;使用方法&quot;&gt;&lt;/a&gt;&lt;em&gt;使用方法&lt;/em&gt;&lt;/h1&gt;&lt;p&gt;1.使用git 下载库&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone https://github.com/asdfghkl12345/download_harrypotter_master.git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;2.进入目录&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd download_harrypotter_master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone https://github.com/asdfghkl12345/download_harrypotter_master.git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     

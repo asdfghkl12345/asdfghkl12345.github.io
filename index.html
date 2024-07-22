@@ -97,7 +97,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-schedule"><a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -150,6 +150,12 @@
         <div class="post-toc-wrap sidebar-panel">
         </div>
         <!--/noindex-->
+        
+      <div id="music163player">
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=5238221&auto=1&height=66">
+        </iframe>
+      </div>
+
 
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -339,8 +345,6 @@
           <p>搞了半天，可算搞定了。就是这个hexo-asset-image插件，一直显示不出来图片，上网查了半天才解决完。</p>
 <h3 id="问题"><a href="#问题" class="headerlink" title="问题:"></a>问题:</h3><p>我不想使用原版的代码，太老套啰嗦了，于是就看到了这个hexo-asset-image插件，说是安完之后可以用markdown语法来显示图片。<br>但是，就出现了以下问题：<br><img src="/posts/1ec292e6/%E5%B1%95%E7%A4%BA.png"><br>啊？什么情况？？？？？为什么显示不出来？</p>
 <h3 id="解决："><a href="#解决：" class="headerlink" title="解决："></a>解决：</h3><p>经过一番摸索，我终于摸索出了原因：<br>1.那个hexo-asset-image插件已经不更新了，所以本来就有问题。<br>2.插件跟hexo-abbrlink插件不兼容，要改。</p>
-<p>好好好，给我玩叠甲是吧！TNND,我偏要搞定。</p>
-<p>首先你得先把hexo-asset-image插件安装好,<br>然后找到node_modules\hexo-asset-image目录，把index.js文件里的代码改成以下内容：</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/posts/1ec292e6.html#more" rel="contents">
@@ -440,7 +444,14 @@
     <div class="post-body" itemprop="articleBody">
           <h1 id="github-pages绑定自定义域名的教训"><a href="#github-pages绑定自定义域名的教训" class="headerlink" title="github pages绑定自定义域名的教训"></a>github pages绑定自定义域名的教训</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近在搭建个人博客的时候，遇到了一些问题，记录一下。</p>
 <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>1.cloudflare的DNS解析没有生效<br>2.强制使用https访问按钮变灰<br><img src="/posts/1a06e7b/test.png" alt="使用https访问"></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/1a06e7b.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -536,9 +547,6 @@
 </ul>
 <h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a><em>使用方法</em></h1><p>1.使用git 下载库</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/asdfghkl12345/download_harrypotter_master.git</span><br></pre></td></tr></table></figure>
-
-<p>2.进入目录</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd download_harrypotter_master</span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/posts/57938.html#more" rel="contents">
@@ -595,6 +603,45 @@
     <span title="站点阅读时长">3 分钟</span>
   </span>
 </div>
+<span id="sitetime"></span>
+<script language=javascript>
+	function siteTime(){
+		window.setTimeout("siteTime()", 1000);
+		var seconds = 1000;
+		var minutes = seconds * 60;
+		var hours = minutes * 60;
+		var days = hours * 24;
+		var years = days * 365;
+		var today = new Date();
+		var todayYear = today.getFullYear();
+		var todayMonth = today.getMonth()+1;
+		var todayDate = today.getDate();
+		var todayHour = today.getHours();
+		var todayMinute = today.getMinutes();
+		var todaySecond = today.getSeconds();
+		/* 
+		Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+		year - 作为date对象的年份，为4位年份值
+		month - 0-11之间的整数，做为date对象的月份
+		day - 1-31之间的整数，做为date对象的天数
+		hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+		minutes - 0-59之间的整数，做为date对象的分钟数
+		seconds - 0-59之间的整数，做为date对象的秒数
+		microseconds - 0-999之间的整数，做为date对象的毫秒数
+        */
+		var t1 = Date.UTC(2024,07,17,11,26,02); //北京时间2018-2-13 00:00:00
+		var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+		var diff = t2-t1;
+		var diffYears = Math.floor(diff/years);
+		var diffDays = Math.floor((diff/days)-diffYears*365);
+		var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+		var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+		var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+		document.getElementById("sitetime").innerHTML=" 已运行"+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+	}
+	siteTime();
+</script>
+
 
 <!--
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
