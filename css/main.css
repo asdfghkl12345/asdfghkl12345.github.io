@@ -1292,7 +1292,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ecc9d1;
+    background: #3bffcb;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2216,6 +2216,24 @@ pre code {
 .post-block:last-of-type .post-eof {
   display: none;
 }
+.post-copyright ul {
+  list-style: none;
+  overflow: hidden;
+  padding: 0.5em 1em;
+  position: relative;
+  background: var(--card-bg-color);
+  border-left: 3px solid #ff2a2a;
+  margin: 1em 0 0;
+}
+.post-copyright ul::after {
+  content: '\f25e';
+  font-family: 'Font Awesome 6 Brands';
+  font-size: 200px;
+  opacity: 0.1;
+  position: absolute;
+  right: -50px;
+  top: -150px;
+}
 .post-tags {
   margin-top: 40px;
   text-align: center;
@@ -2639,7 +2657,7 @@ mark.search-keyword {
 }
 header.header {
   background: var(--content-bg-color);
-  border-radius: initial;
+  border-radius: 20px;
   box-shadow: initial;
 }
 @media (max-width: 991px) {
@@ -2676,7 +2694,7 @@ header.header {
   }
 }
 .main-inner {
-  border-radius: initial;
+  border-radius: 20px;
   box-sizing: border-box;
   width: calc(100% - 252px);
 }
@@ -2811,7 +2829,7 @@ header.header {
   }
   .sidebar-inner {
     background: var(--content-bg-color);
-    border-radius: initial;
+    border-radius: 20px;
     box-shadow: initial;
     box-sizing: border-box;
     color: var(--text-color);
@@ -2921,4 +2939,18 @@ body {
 }
 .main-inner {
   opacity: 0.8;
+}
+.links-of-recent-posts {
+  font-size: 0.8125em;
+  margin-top: 10px;
+}
+.links-of-recent-posts-title {
+  font-size: 1.03em;
+  font-weight: 600;
+  margin-top: 0;
+}
+.links-of-recent-posts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
